@@ -1,0 +1,21 @@
+.nav-bar {
+	
+	height: 4rem;
+}
+
+.file {
+	height: 8rem;
+}
+
+.file:hover {
+	height: 40rem;
+}
+
+.heading {
+	background-color: tan;
+	text-align: center;
+}
+
+.content {
+
+}
