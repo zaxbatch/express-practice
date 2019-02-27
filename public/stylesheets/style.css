@@ -4,7 +4,7 @@ html {
 
 .nav-bar {
 	border-radius: 1%;
-	height: 8rem;
+
 }
 
 .file {
@@ -38,8 +38,12 @@ html {
 }
 
 .title {
-	margin: 12px 12px 12px 2px;
+	margin: 12px 12px 12px 12px;
 	
+}
+
+.nav-bar {
+	height: 8rem;
 }
 
 }
