@@ -2,8 +2,10 @@ extends layout
 
 block main
 	.container
-		h1= title
-		h2.heading /routes/index.js
-		img.file(src='/images/06.png',alt='index.js')
-		h2.heading /routes/users.js
-		img.file(src='/images/07.png',alt='index.js')
+		.title
+			h1= title
+		.content
+			h2.heading /routes/index.js
+			img.file(src='/images/06.png',alt='index.js')
+			h2.heading /routes/users.js
+			img.file(src='/images/07.png',alt='index.js')

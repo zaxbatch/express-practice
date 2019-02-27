@@ -26,6 +26,10 @@ html {
 
 }
 
+.content {
+	margin: 16px 16px;
+}
+
 @media only screen and (min-width: 768px) {
 html {
 	background-color: grey;

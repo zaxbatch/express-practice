@@ -1,11 +1,13 @@
 extends layout 
 
 block main
-	.w3-container
-		h1= title
-		img.file(src="/images/10.png" alt="built-in middleware")
-		ul
-			li express.static
-			li express.json
-			li express.urlencoded
-		
+	.container
+		.title
+			h1= title
+		.content
+			img.file(src="/images/10.png" alt="built-in middleware")
+			ul
+				li express.static
+				li express.json
+				li express.urlencoded
+			

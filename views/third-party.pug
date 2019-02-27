@@ -2,9 +2,13 @@ extends layout
 
 block main
 	.container
-		h1= title
-		mg.file(src="/images/11.png" alt="third-party middleware")
-		ul
-			li cookie-parser
-			li body-parser
-			li many more
+		.title
+			h1= title
+		.content
+			img.file(src="/images/11.png" alt="third-party middleware")
+			ul
+				li 
+					a(href='/third-party/cookie-parser') cookie-parser
+				li 
+					a(href='/third-party/body-parser') body-parser
+				li many more
