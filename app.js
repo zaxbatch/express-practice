@@ -11,7 +11,7 @@ var app = express();
 
 //time
 app.use(function (req, res, next) {
-  console.log('Time:')
+  console.log('Time:', Date.now())
   next()
 })
 

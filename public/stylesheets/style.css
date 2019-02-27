@@ -1,6 +1,10 @@
+html {
+	background-color: white;
+}
+
 .nav-bar {
-	
-	height: 4rem;
+	border-radius: 1%;
+	height: 8rem;
 }
 
 .file {
@@ -12,10 +16,30 @@
 }
 
 .heading {
-	background-color: tan;
+	background-color: lightgreen;
+	border-radius: 1%;
 	text-align: center;
 }
 
-.content {
+.container {
+	margin: 16px 16px 16px 16px;
+
+}
+
+@media only screen and (min-width: 768px) {
+html {
+	background-color: grey;
+}
+.container {
+
+	margin: -5rem 4rem;
+	border-radius: 1%;
+	background-color: white;
+}
+
+.title {
+	margin: 12px 12px 12px 2px;
+	
+}
 
 }
