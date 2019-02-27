@@ -9,15 +9,24 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+//time
+app.use(function (req, res, next) {
+  console.log('Time:')
+  next()
+})
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
+
+// built in modules
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// end built in
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -37,5 +46,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
 
 module.exports = app;
